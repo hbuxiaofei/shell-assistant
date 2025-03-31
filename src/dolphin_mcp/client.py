@@ -357,7 +357,7 @@ async def generate_text(conversation: List[Dict], model_cfg: Dict,
     """
     provider = model_cfg.get("provider", "").lower()
 
-    if provider == "openai":
+    if provider == "openai" or provider == "deepseek":
         if stream:
             return generate_with_openai(conversation, model_cfg, all_functions, stream=True)
         else:

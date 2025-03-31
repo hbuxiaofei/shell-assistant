@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "linux-shell": {
+      "command": "python3",
+      "args": [
+        "server-shell.py"
+      ]
+    }
+  },
+  "models": [
+    {
+      "model": "deepseek-chat",
+      "title": "deepseek-chat",
+      "systemMessage": "You are a helpful assistant.",
+      "apiBase": "https://api.deepseek.com",
+      "provider": "deepseek"
+    }
+  ]
+}
